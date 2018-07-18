@@ -26,7 +26,7 @@ export class Stock {
   }
 
   getPrice(): number {
-    return this.marketService.getPrice(this.symbol);
+    return this.price;
   }
 
 }

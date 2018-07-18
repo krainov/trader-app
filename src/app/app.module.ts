@@ -8,6 +8,7 @@ import { MarketServiceImpl } from './market.service';
 import { AppComponent } from './app.component';
 import { MarketComponent } from './market/market.component';
 import { TradersComponent } from './traders/traders.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TradersComponent } from './traders/traders.component';
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [
     TradersService,
